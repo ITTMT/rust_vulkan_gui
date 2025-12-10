@@ -16,20 +16,30 @@
         # Needed to replicate LD_LIBRARY_PATH behavior
         buildInputs = with pkgs; [
           libxkbcommon
-          wayland xorg.libX11 xorg.libXcursor xorg.libXrandr xorg.libXi
+          wayland 
+          xorg.libX11 
+          xorg.libXcursor 
+          xorg.libXrandr 
+          xorg.libXi
           alsa-lib
-          fontconfig freetype
-          shaderc directx-shader-compiler
-          pkg-config cmake
+          fontconfig 
+          freetype
+          shaderc 
+          directx-shader-compiler
+          pkg-config 
+          cmake
           mold
 
           libGL
-          vulkan-headers vulkan-loader
-          vulkan-tools vulkan-tools-lunarg
+          vulkan-headers 
+          vulkan-loader
+          vulkan-tools 
+          vulkan-tools-lunarg
           vulkan-extension-layer
           vulkan-validation-layers
 
-          cargo-nextest cargo-fuzz
+          cargo-nextest 
+          cargo-fuzz
           typos
           yq
           rustup
